@@ -1,10 +1,11 @@
 package main
 
 import (
-	"github.com/kerokerogeorge/go-playground/handler"
+	handler "github.com/kerokerogeorge/go-playground/handler/examples/context"
 )
 
 func main() {
 	// handler.WaitCancel()
-	handler.DoSomeThingWhileWaiting()
+	// handler.DoSomeThingWhileWaiting()
+	handler.SetValue()
 }

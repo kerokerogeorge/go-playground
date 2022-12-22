@@ -18,6 +18,7 @@ func DoSomeThingWhileWaiting() {
 			// チャネル対する受信操作を記載する
 			// いずれかのcaseを満たして処理を進められるまで待機する
 			case <-ctx.Done():
+				fmt.Println("called")
 				return
 			case i := <-task:
 				fmt.Println("get", i)
@@ -29,10 +30,12 @@ func DoSomeThingWhileWaiting() {
 	}()
 
 	time.Sleep(time.Second)
+	// fmt.Println(time.Second * 3)
 
 	for i := 0; 5 > i; i++ {
+		fmt.Println("called:", i)
 		task <- i
 	}
-
+	fmt.Println("before cancel")
 	cancel()
 }
