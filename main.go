@@ -2,7 +2,7 @@ package main
 
 import (
 	// handler "github.com/kerokerogeorge/go-playground/handler/examples/context"
-	"github.com/kerokerogeorge/go-playground/handler/examples/klaytn"
+	"github.com/kerokerogeorge/go-playground/handler/examples/klay"
 )
 
 func main() {
@@ -11,5 +11,5 @@ func main() {
 	// handler.SetValue()
 	// handler.TrimPrefix()
 	// handler.CreateFile()
-	klaytn.HexToAddress()
+	klay.HexToAddress()
 }

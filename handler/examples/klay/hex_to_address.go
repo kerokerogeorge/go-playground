@@ -1,4 +1,4 @@
-package klaytn
+package klay
 
 import (
 	"log"
